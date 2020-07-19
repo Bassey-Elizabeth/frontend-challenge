@@ -130,7 +130,71 @@ body {
 
 
 
-/* Ruleset for 1000+px screen */
+/* Ruleset for different screens */
+
+@media (min-width: 250px) {
+    
+body {
+    background: url(../images/pattern-bg.svg) fixed no-repeat,
+                url(../images/pattern-quotes.svg) fixed no-repeat,
+                url(../images/pattern-curve.svg) fixed no-repeat;
+    background-size: 80%, 15%, 30%;
+    background-position: left 50% top 8%, 
+                        top 60% right 50%,
+                        bottom 0% left 0%;
+}
+
+.slider-container {
+    width: 90%;
+}
+
+.show-slide .photo > img {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 2rem;   
+}
+
+.contents {
+    padding: 0 auto;
+    text-align: center;
+}
+}
+
+
+@media (min-width: 370px) {
+    
+    body {
+        background: url(../images/pattern-bg.svg) fixed no-repeat,
+                    url(../images/pattern-quotes.svg) fixed no-repeat,
+                    url(../images/pattern-curve.svg) fixed no-repeat;
+        background-size: 60%, 15%, 30%;
+        background-position: left 30% top 8%, 
+                            top 60% right 50%,
+                            bottom 0% left 0%;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+    
+    .show-slide .photo > img {
+        margin-top: 1rem;
+        margin-right: 2rem;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        right: 2rem;   
+    }
+    
+    .contents {
+        padding: 0 auto;
+        text-align: center;
+    }
+    }
+
 @media (min-width: 1000px) {
 
 body {
@@ -140,7 +204,7 @@ body {
     background-size: 50%, 10%, 50%;
     background-position: top 60% right -5%, 
                         left 20% top 30%,
-                        bottom 0% left 0%;;
+                        bottom 0% left 0%;
     
 }
 
