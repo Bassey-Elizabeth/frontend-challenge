@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter:weights@300;500;700">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+</head>
+<body>
+
+  <div class="slider-container">
+  <!-- first slider container -->
+  <div class="show-slide fade">
+    <div class="photo">
+      <img src="./images/image-tanya.jpg" alt="picture of a lady">
+      <span class="navigate">
+        <a class="prev" onclick="nextSlide(-1)"><img src="images/icon-prev.svg" alt="prev-icon"></a>
+        <a class="next" onclick="nextSlide(1)"><img src="images/icon-next.svg" alt="next-icon"></a>
+      </span>
+    </div>
+
+    <div class="contents">
+        <p> 
+            “ I’ve been interested in coding for a while but never taken the jump, until now. 
+            I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+            excited about the future. ”
+        </p>
+        <p><strong>Tanya Sinclair</strong><br>
+        <span class="role">UX Engineer</span>
+        </p>
+  </div> <!--end first slider show--> 
+
+    <!-- second slider container -->
+    <div class="show-slide fade">
+      <div class="photo">
+        <img src="images/image-john.jpg" alt="tanya">
+        <span class="navigate">
+          <a class="prev" onclick="nextSlide(-1)"><img src="images/icon-prev.svg" alt="prev-icon"></a>
+          <a class="next" onclick="nextSlide(1)"><img src="images/icon-next.svg" alt="next-icon"></a>
+        </span>
+      </div>
+
+      <div class="contents">
+          <p class="description">
+              If you want to lay the best foundation possible I’d recommend taking this course. 
+              The depth the instructors go into is incredible. I now feel so confident about 
+              starting up as a professional developer. ”
+          </p> 
+
+        <p><strong>John Tarkpor</strong><br>
+        <span class="role">Junior Front-end Developer<span>
+        </p>
+      </div>
+    </div><!--end second slider show-->
+
+    <!-- <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>. 
+          Coded by <a href="#">Elizabeth Bassey.</a>
+      </p>
+    </div> -->
+
+</div> 
+
+  <script src="js/main.js"></script>
+</body>
+</html>
